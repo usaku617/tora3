@@ -56,7 +56,7 @@ select * from usr;
 <alter tableで追加>
 alter table usr add primary key (uid);
 <テーブル作成時に指定1-各列に指定>
-create table usr (uid varchar(7) primary key ,passwd varchar(15);
+create table usr (uid varchar(7) primary key ,passwd varchar(15));
 <テーブル作成時に指定2-最後に制約として記述>
 create table usr (uid varchar(7), passwd varchar(15),primary key(uid);
 [auto increment属性追加]
