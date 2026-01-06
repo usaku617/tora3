@@ -63,7 +63,7 @@ create table usr (uid varchar(7), passwd varchar(15),primary key(uid));
 <alter tableで追加>
 alter table schedule modify pid int auto_increment;
 <テーブル作成時に指定>
-create table schedule (pid int auto_increment, ...)
+create table schedule (pid int auto_increment primary key, ...)
 [not null制約追加]
 alter table usr modify passwd varchar(15) not null, modify uname varchar(20) not null;
 [default制約追加]
