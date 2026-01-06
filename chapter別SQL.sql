@@ -126,7 +126,7 @@ DATE_SUB('～', INTERVAL 1 YEAR[or MONTH or DAY]);
 select s.subject, s.pdate, c.cname from schedule s inner join category c on s.cid = c.cid where s.uid='yyamada';
 ・on以下の条件で一致するデータのみを表示。
 [外部結合]
-select s.subject, s.pdate, u.uname from usr u left (outer) join schedule s as on u.uid=s.uid;
+select s.subject, s.pdate, u.uname from usr u left (outer) join schedule s on u.uid=s.uid;
 ・左のテーブルを起点に結合。(左のデータはすべて表示される)
 [サブクエリ]
 (1)
